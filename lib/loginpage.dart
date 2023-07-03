@@ -46,12 +46,11 @@ class _loginpageState extends State<loginpage> {
              Padding (
                padding: const EdgeInsets.only(top: 30,left: 60,right: 60,bottom: 50),
                child: TextFormField(
-                         obscureText:showpass,
+                         obscureText:true,
                   obscuringCharacter: '*',
                        decoration: InputDecoration(
                          prefixIcon: Icon(Icons.password),
-
-                        suffixIcon: IconButton(onPressed: (){
+                           suffixIcon: IconButton(onPressed: (){
                           setState(() {
                             if(showpass){
                               showpass=false;
