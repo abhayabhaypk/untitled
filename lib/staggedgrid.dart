@@ -32,7 +32,7 @@ class staggedgrid extends StatelessWidget{
           custemchild(icondate:Icons.arrow_back_rounded,bgcolor:Colors.redAccent),
           custemchild(icondate:Icons.king_bed,bgcolor:Colors.yellowAccent),
           custemchild(icondate:Icons.apple,bgcolor:Colors.blueGrey),
-          custemchild(icondate:Icons.apple,bgcolor:Colors.red),
+          custemchild(icondate:Icons.apple,bgcolor:Colors.red ),
 
 
         ],),
