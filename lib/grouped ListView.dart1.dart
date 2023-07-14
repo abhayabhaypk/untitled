@@ -79,7 +79,9 @@ class ListviewAssignment extends StatelessWidget {
             ],
           ),
         );
-      }),
+      },
+        itemCount: titiles.length,
+      ),
     );
   }
 }
