@@ -33,10 +33,10 @@ class gridview extends StatelessWidget {
     Colors.blueAccent,
     Colors.black26,
     Colors.deepOrange,
+    Colors.yellow,
+    Colors.redAccent,
     Colors.deepOrange,
-    Colors.deepOrange,
-    Colors.deepOrange,
-    Colors.deepOrange,
+    Colors.blue,
     Colors.deepOrange,
   ];
 
