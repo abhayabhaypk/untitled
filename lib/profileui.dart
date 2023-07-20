@@ -18,15 +18,6 @@ class profileUI extends StatelessWidget {
       extendBodyBehindAppBar: true,
       body: Container(
         color: Colors.grey[50],
-        // child: SliverAppBar(
-        //   expandedHeight: 100, //change later
-        //   leading: IconButton(
-        //     onPressed: () {},
-        //     icon: Icon(Icons.arrow_left),
-        //   ),
-        //   actions: [IconButton(onPressed: () {}, icon: Icon(Icons.menu))],
-        // ),
-
         child: ListView(
           children: [
             Row(
