@@ -12,6 +12,17 @@ class carousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.black,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.house),label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart),label: "Cart"),
+          BottomNavigationBarItem(icon: Icon(Icons.person),label: "Account"),
+        ],
+      ),
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
@@ -225,9 +236,11 @@ class Icontitle extends StatelessWidget {
 class gridview extends StatelessWidget {
   var images = [
     'assets/images/apple.jpg',
-    'assets/images/images.png',
-    'assets/images/room.1.jpg'
+    'assets/images/apple.jpg',
+    'assets/images/apple.jpg'
   ];
+
+
 
   @override
   Widget build(BuildContext context) {
