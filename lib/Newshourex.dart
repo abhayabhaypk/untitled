@@ -28,11 +28,9 @@ class CategoriesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // title: Text('hi all'),
         toolbarHeight: 100,
         backgroundColor: Colors.white,
-        elevation: 0, // shadow of the appbar
-        // leading: Icon(Icons.arrow_back_ios_new,color: Colors.black,),
+        elevation: 0,
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -78,18 +76,12 @@ class CategoriesPage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       color: Colors.white,
-                      // boxShadow: [
-                      //   BoxShadow(color: Colors.black, blurRadius: 1)
-                      // ],
                       image: DecorationImage(
                           image: AssetImage(
                               'assets/images/newsHour/squidGame.jpg'),fit: BoxFit.cover
                       ),
                     ),
-                    // child: Image(
-                    //   image: AssetImage(
-                    //       'assets/images/newsHour/squidGame.jpg'),
-                    // ),
+
                   ),
                 ),
                 Positioned(
