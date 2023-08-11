@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/prifile.dart1.dart';
+import 'package:untitled/profileui.dart';
+
 import 'package:untitled/tabbar.dart';
 
 void main(){
@@ -30,7 +31,7 @@ class _bottomnavigationnState extends State<bottomnavigationn> {
          ),
        ),
      ),
-    profileUi(),
+    profileUI(),
     // Center(
     //   child: Card(
     //     child: Padding(

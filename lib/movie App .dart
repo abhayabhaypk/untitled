@@ -8,6 +8,21 @@ void main() {
 }
 
 class movieApp extends StatelessWidget {
+  List image = [
+    "assets/images/avater.jpg",
+    "assets/images/interstalar.jfif",
+    "assets/images/ready or not.jpg",
+    "assets/images/titanic.jpg",
+    "assets/images/tenet.jpg"
+  ];
+  List img = [
+    "assets/images/docter strange.jpeg",
+    "assets/images/Black widow.jpg",
+    "assets/images/iron man.jpg",
+    "assets/images/Hulk.jpg",
+    "assets/images/THOR.jpg"
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,9 +45,10 @@ class movieApp extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(
+      body: ListView(
         children: [
           Container(
+            // height: double.infinity,
             child: Column(
               children: [
                 Padding(
@@ -101,7 +117,6 @@ class movieApp extends StatelessWidget {
                         ),
                       ),
                     ),
-
                   ],
                 ),
                 SizedBox(
@@ -162,12 +177,67 @@ class movieApp extends StatelessWidget {
                     )
                   ],
                 ),
-
               ],
+            ),
+          ),
+          Container(
+            alignment: Alignment.topLeft,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 10, top: 15),
+              child: Text(
+                "Popular",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ),
+          Container(
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                  children: image.map((Movie) {
+                return Container(
+                  margin: EdgeInsets.all(10),
+                  height: 200,
+                  width: 170,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      image: DecorationImage(
+                          image: AssetImage(Movie), fit: BoxFit.cover)),
+                );
+              }).toList()),
+            ),
+          ),
+          Container(
+            alignment: Alignment.topLeft,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 10, top: 15),
+              child: Text(
+                "Recommentation for you",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ),
+          Container(
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                  children: img.map((Movie) {
+                return Container(
+                  margin: EdgeInsets.all(10),
+                  height: 160,
+                  width: 150,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      image: DecorationImage(
+                          image: AssetImage(Movie), fit: BoxFit.cover)),
+                );
+              }).toList()),
             ),
           ),
         ],
       ),
     );
   }
+
+  void setState(Null Function() param0) {}
 }
